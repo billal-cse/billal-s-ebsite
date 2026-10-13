@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7f6;
+    color: #172b24;
+}
+
+/* Sidebar */
+
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    background: #12372a;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    color: white;
+    margin-bottom: 25px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 13px;
+    margin: 5px 0;
+    border-radius: 8px;
+}
+
+.sidebar a:hover {
+    background: #23845c;
+}
+
+/* Main */
+
+.main {
+    margin-left: 240px;
+    padding: 35px;
+}
+
+.main h1 {
+    margin-bottom: 30px;
+}
+
+/* Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+
+    box-shadow:
+        0 3px 12px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+    font-size: 28px;
+}
+
+/* Box */
+
+.box {
+    background: white;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 12px;
+
+    box-shadow:
+        0 3px 12px rgba(0,0,0,0.08);
+}
+
+/* Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Inputs */
+
+input {
+    display: block;
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 8px;
+    margin-bottom: 18px;
+
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+/* Button */
+
+button {
+    padding: 11px 18px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #19764f;
+    color: white;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #125d3e;
+}
+
+button.off {
+    background: #777;
+}
+
+/* Alerts */
+
+.alert {
+    padding: 18px;
+    margin: 15px 0;
+
+    border-radius: 10px;
+}
+
+.danger {
+    background: #ffdede;
+}
+
+.warning {
+    background: #fff0c7;
+}
+
+.success {
+    background: #dff5e7;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .sidebar {
+        width: 190px;
+    }
+
+    .main {
+        margin-left: 190px;
+        padding: 20px;
+    }
+
+}

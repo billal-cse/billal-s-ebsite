@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appliances</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <h2>⚡ Smart Energy</h2>
+
+    <a href="index.html">🏠 Dashboard</a>
+    <a href="appliances.html">🔌 Appliances</a>
+    <a href="analytics.html">📊 Analytics</a>
+    <a href="bill.html">💰 Bill Calculator</a>
+    <a href="tips.html">💡 Saving Tips</a>
+    <a href="alerts.html">🔔 Alerts</a>
+    <a href="settings.html">⚙️ Settings</a>
+
+</div>
+
+<div class="main">
+
+    <h1>Appliances</h1>
+
+    <div class="box">
+
+        <table>
+
+            <tr>
+                <th>Appliance</th>
+                <th>Power</th>
+                <th>Status</th>
+                <th>Control</th>
+            </tr>
+
+            <tr>
+                <td>Ceiling Fan</td>
+                <td>75 W</td>
+                <td>ON</td>
+                <td>
+                    <button onclick="toggle(this)">ON</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Light</td>
+                <td>20 W</td>
+                <td>ON</td>
+                <td>
+                    <button onclick="toggle(this)">ON</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Air Conditioner</td>
+                <td>1200 W</td>
+                <td>OFF</td>
+                <td>
+                    <button class="off" onclick="toggle(this)">OFF</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Refrigerator</td>
+                <td>180 W</td>
+                <td>ON</td>
+                <td>
+                    <button onclick="toggle(this)">ON</button>
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <h2>⚡ Smart Energy</h2>
+
+    <a href="index.html">🏠 Dashboard</a>
+    <a href="appliances.html">🔌 Appliances</a>
+    <a href="analytics.html">📊 Analytics</a>
+    <a href="bill.html">💰 Bill Calculator</a>
+    <a href="tips.html">💡 Saving Tips</a>
+    <a href="alerts.html">🔔 Alerts</a>
+    <a href="settings.html">⚙️ Settings</a>
+
+</div>
+
+<div class="main">
+
+    <h1>Settings</h1>
+
+    <div class="box">
+
+        <label>Electricity Rate (৳/kWh)</label>
+
+        <input
+            type="number"
+            value="8"
+        >
+
+        <label>Alert Threshold (kW)</label>
+
+        <input
+            type="number"
+            value="3"
+        >
+
+        <button onclick="saveSettings()">
+            Save Settings
+        </button>
+
+        <p id="saveMsg"></p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
